@@ -40,12 +40,12 @@ Route::get('/laptop',LaptopComponet::class)->name('laptop');
 
 Route::get('/desktop',DesktopComponet::class)->name('desktop');
 
-Route::get('/srvices/laptop-repair',LaptopRepair::class)->name('services.laptop-repair');
-Route::get('/srvices/pc-repair',PCRepair::class)->name('services.pc-repair');
-Route::get('/srvices/mac-repair',MacRepair::class)->name('services.mac-repair');
-Route::get('/srvices/data-backup',DataBackup::class)->name('services.data-backup');
-Route::get('/srvices/software-installation',SoftwareInstallation::class)->name('services.software-installation');('services.laptop-repair');
-Route::get('/srvices/hardware-updates',HardwareUpdates::class)->name('services.hardware-updates');
+Route::get('/services/laptop-repair',LaptopRepair::class)->name('services.laptop-repair');
+Route::get('/services/pc-repair',PCRepair::class)->name('services.pc-repair');
+Route::get('/services/mac-repair',MacRepair::class)->name('services.mac-repair');
+Route::get('/services/data-backup',DataBackup::class)->name('services.data-backup');
+Route::get('/services/software-installation',SoftwareInstallation::class)->name('services.software-installation');('services.laptop-repair');
+Route::get('/services/hardware-updates',HardwareUpdates::class)->name('services.hardware-updates');
 
 // Route::middleware([
 //     'auth:sanctum',

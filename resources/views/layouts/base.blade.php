@@ -32,7 +32,7 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand-lg navbar-primary bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
         <div class="container">
             <a class="navbar-brand" href="{{ route('home') }}">Navbar</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02"
