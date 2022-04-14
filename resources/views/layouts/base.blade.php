@@ -148,6 +148,10 @@
         </header>
 
         {{ $slot }}
+            
+        <footer>
+            <div class="back-to-top position-fixed end-0 bottom-0" id="myBtn"><a href="#top"><span class="fa fa-envelope"></span></a></div>
+        </footer>
 
         <!-- Optional JavaScript; choose one of the two! -->
 
