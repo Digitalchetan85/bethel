@@ -16,7 +16,7 @@
     <title>Hello, world!</title>
 </head>
 
-<body class="animsition-overlay">
+<body   >
 
     <header class="sticky-top">
         <div id="top-menu" class="bg-secondary py-2">
