@@ -99,6 +99,7 @@ $light-color: #f8f9fa;
         height: 275px;
         &:hover {
             background-color: $primary-color;
+            transition: all 0.5s ease;
             .card-title {
                 color: $white-color;
             }
@@ -110,28 +111,38 @@ $light-color: #f8f9fa;
  }
 
  #third-section {
+     background-image: url(../images/section-three-baner.png);
+     background-attachment: fixed;
+     background-repeat: no-repeat;
+     background-position: center center;
+     background-size: cover;
+     min-height: 500px;
     .card {
+       background-color: transparent;
        height: 200px;
        .fa-shield-virus, .fa-screwdriver-wrench, .fa-compact-disc, .fa-laptop-medical {
            padding: 30px;
            font-size: 50px;
-           background-color: $primary-color;
+           background-color: $secondary-color;
            color: $white-color;
            border-radius: 50%;
            margin: 15px 5px;
-           ::after {
-               content: '';
-               padding: 40px;
-               background-color:$white-color;
-           }
        }
        &:hover {
-           .card-title {
-
-           }
-           .card-text {
-               
-           }
+           transform: scale(1.1);
+           transition: all 0.5s ease;
        }
+    }
+}
+
+#fourth-section {
+
+}
+
+#fifth-section {
+    .owl-nav {
+        .owl-prev, .owl-next {
+            
+        }
     }
 }
