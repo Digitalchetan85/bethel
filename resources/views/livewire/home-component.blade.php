@@ -54,20 +54,20 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="card text-center py-3">
+                    <div class="card text-center py-3 animate__animated animate__fadeInLeft animate__delay-1s animation__repeate-1">
                         <div class="card-body">
                             <h5 class="card-title">Laptop Repairs</h5>
                             <p class="card-text">While you wait or same day Service if you decide not to proceed
                                 the repair of your laptop, we will pay you cash to buy it and return your hard drive or
                                 transfer data for you.</p>
                         </div>
-                        <div class="card-footer bg-transparent border-0">
+                        <div class="card-footer bg-transparent border-0 ">
                             <a href="#" class="btn btn-secondary">More Info</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card text-center py-3">
+                    <div class="card text-center py-3 animate__animated animate__fadeIn animate__delay-2s animation__repeate-1">
                         <div class="card-body">
                             <h5 class="card-title">Desktop Repair</h5>
                             <p class="card-text">We service all makes and models of Computers. Most Computers are
@@ -81,7 +81,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card text-center py-3">
+                    <div class="card text-center py-3 animate__animated animate__fadeInRight animate__delay-3s animation__repeate-1">
                         <div class="card-body">
                             <h5 class="card-title">Other Services</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional
@@ -138,8 +138,8 @@
             <div class="row">
                 <div class="col-sm-3">
                     <div class="card border-0">
-                        <div class="card-body text-center">
-                            <i class="fa-solid fa-laptop-medical"></i>
+                        <div class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
+                            <i class="fa-solid fa-laptop-medical "></i>
                             <h5 class="card-title text-center">Diagnosing Your Device</h5>
                             <p class="card-text">We will diagnose your issues, provide you with options and give
                                 you a price for FREE!</p>
@@ -149,7 +149,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="card border-0">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
                             <i class="fa-solid fa-compact-disc"></i>
                             <h5 class="card-title text-center">Hardware & Software Installation</h5>
                             <p class="card-text">We can help you determine what hardware install or software
@@ -160,7 +160,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="card border-0">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                             <h5 class="card-title text-center">Professional Computer Repair</h5>
                             <p class="card-text">We fix all sorts of computer issues! From software to hardware we
@@ -171,7 +171,7 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="card border-0">
-                        <div class="card-body text-center">
+                        <div class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
                             <i class="fa-solid fa-shield-virus"></i>
                             <h5 class="card-title text-center">Virus & Spyware Removal</h5>
                             <p class="card-text">We work through a remote super-secure connection, and give you a
@@ -188,7 +188,7 @@
     <div class="py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-6">
+                <div class="col-md-6 ">
                     <h2 class="text-center">About Us</h2>
                     <p class="text-center">Your Local Computer Specialist Servicing</p>
                     <p>Computer Repair is dedicated to providing the best customer service and computer repair available
