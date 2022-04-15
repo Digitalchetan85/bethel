@@ -22,7 +22,7 @@
 <body class="">
 
     <header class="sticky-top">
-        <div id="top-menu" class="bg-secondary py-2">
+        <div id="top-menu" class="bg-primary py-2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 align-self-center">
