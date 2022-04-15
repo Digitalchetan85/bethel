@@ -1,3 +1,8 @@
+$primary-color: #2e3192;
+$secondary-color: #277eb3;
+$black-color: #000000;
+$white-color: #ffffff;
+
 // X-Small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
@@ -34,4 +39,32 @@
     body {
         background-color: #fff;
     }
+ }
+
+ #top-menu {
+     a {
+        color: $white-color;
+        font-size: 16px;
+        font-weight: 600;
+        &:hover {
+            color: $primary-color;
+        }
+     }
+ }
+
+ #navbar {
+     .nav-item {
+         margin: 10px 20px;
+         &:nth-child(6) {
+             margin: 10px 0;
+         }
+     }
+     .nav-link {
+         font-size: 18px;
+         font-weight: 600;
+         color: $primary-color;
+         &:hover {
+             color: $secondary-color;
+         }
+     }
  }

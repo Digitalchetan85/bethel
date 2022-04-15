@@ -12,40 +12,53 @@
     <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/animsition.min.css') }}" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kmlpandey77/bootnavbar/css/bootnavbar.css">
+
     @livewireStyles
     <title>Hello, world!</title>
 </head>
 
-<body class="">
+<body class="animsition">
 
     <header class="sticky-top">
         <div id="top-menu" class="bg-secondary py-2">
             <div class="container">
                 <div class="row">
                     <div class="col-md-4 align-self-center">
-                        phone number
+                        <div class="text-center text-md-start">
+                            <a href="tel:08880470007" class="text-decoration-none"><i class="fas fa-phone-volume"></i> +91
+                                88804 70007</a>
+                        </div>
                     </div>
                     <div class="col-md-4 align-self-center">
-                        <i class="fas fa-envelope"></i> Email
+                        <div class="text-center">
+                            <a href="mailto:info@shanthaswebz.com" class="text-decoration-none"><i
+                                    class="fas fa-envelope"></i> info@shanthaswebz.com</a>
+                        </div>
                     </div>
                     <div class="col-md-4 align-self-center">
-                        social Media Icons
+                        <div class="text-center text-md-end">
+                            <a href="#" class="text-decoration-none"><i class="fab fa-facebook fs-5 mx-2"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="fab fa-instagram fs-5 mx-2"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="fab fa-linkedin fs-5 mx-2"></i></a>
+                            <a href="#" class="text-decoration-none"><i class="fab fa-youtube fs-5 mx-2"></i></a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-white">
+        <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('assets/images/logo.png') }}"
-                        alt="" class="img-fluid"></a>
+                <a class="navbar-brand" href="{{ route('home') }}"><img
+                        src="{{ asset('assets/images/logo.png') }}" alt="" class="img-fluid"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
                     aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                    <ul class="navbar-nav ms-auto me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="{{ route('home') }}">Home</a>
                         </li>
@@ -138,6 +151,12 @@
 
                             @endif
                         </ul>
+                        <ul class="list-unstyled">
+                            <li class="nav-item">
+                                <a class="btn btn-primary animsition-link" href="tel:08880470007"><i
+                                        class="fa fa-phone-volume"></i> 88804 70007</a>
+                            </li>
+                        </ul>
                         {{-- <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
@@ -148,9 +167,10 @@
         </header>
 
         {{ $slot }}
-            
+
         <footer>
-            <div class="back-to-top position-fixed end-0 bottom-0" id="myBtn"><a href="#top"><span class="fa fa-envelope"></span></a></div>
+            <div class="back-to-top position-fixed end-0 bottom-0" id="myBtn"><a href="#top"><span
+                        class="fa fa-envelope"></span></a></div>
         </footer>
 
         <!-- Optional JavaScript; choose one of the two! -->
@@ -162,19 +182,20 @@
         <script src="{{ asset('assets/js/main.js') }}"></script>
         <script src="{{ asset('assets/js/font-awesome.js') }}"></script>
         <script src="{{ asset('assets/js/animsition.min.js') }}"></script>
+        <script src="https://cdn.jsdelivr.net/gh/kmlpandey77/bootnavbar/js/bootnavbar.js"></script>
 
         @livewireScripts
         <!-- Option 2: Separate Popper and Bootstrap JS -->
         <!--
-                        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
-                                                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
-                                                crossorigin="anonymous">
-                        </script>
-                        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
-                                                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
-                                                crossorigin="anonymous">
-                        </script>
-                        -->
+                                <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+                                                                integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+                                                                crossorigin="anonymous">
+                                </script>
+                                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+                                                                integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+                                                                crossorigin="anonymous">
+                                </script>
+                                -->
     </body>
 
     </html>

@@ -58,4 +58,14 @@
     $("#myBtn").on("click", function () {
         $("html, body").animate({ scrollTop: 0 }, 300);
     });
+
+    //hover dropdown
+    $(document).ready(function(){
+        $('li.dropdown').hover(function() {
+          $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
+        }, function() {
+          $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
+        });  
+    });
+    
 })(jQuery);
