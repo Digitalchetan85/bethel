@@ -12,6 +12,7 @@
     <link href="{{ asset('assets/css/font-awesome.min.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/main.css') }}" rel="stylesheet">
     <link href="{{ asset('assets/css/animsition.min.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/animate.min.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kmlpandey77/bootnavbar/css/bootnavbar.css">
 
     @livewireStyles
@@ -152,7 +153,7 @@
                             @endif
                         </ul>
                         <ul class="list-unstyled">
-                            <li class="nav-item">
+                            <li class="">
                                 <a class="btn btn-primary animsition-link" href="tel:08880470007"><i
                                         class="fa fa-phone-volume"></i> 88804 70007</a>
                             </li>
