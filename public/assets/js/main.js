@@ -1,5 +1,9 @@
 (function ($) {
     "use strict";
+    var plugins = {
+        animation: $(".animation"),
+    };
+
     $("#HomeSlider").owlCarousel({
         loop: true,
         margin: 10,
@@ -60,12 +64,79 @@
     });
 
     //hover dropdown
-    $(document).ready(function(){
-        $('li.dropdown').hover(function() {
-          $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(200);
-        }, function() {
-          $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(200);
-        });  
+    $(document).ready(function () {
+        $("li.dropdown").hover(
+            function () {
+                $(this)
+                    .find(".dropdown-menu")
+                    .stop(true, true)
+                    .delay(200)
+                    .fadeIn(200);
+            },
+            function () {
+                $(this)
+                    .find(".dropdown-menu")
+                    .stop(true, true)
+                    .delay(200)
+                    .fadeOut(200);
+            }
+        );
     });
-    
+
+    // Lazy Load animation
+    $(window).on("load", function () {
+        var windowWidth = window.innerWidth || $(window).width();
+        $(".body").fadeIn(500);
+        // lazy loading effect
+        if (plugins.animation.length) {
+            onScrollInit(plugins.animation, windowWidth);
+        }
+    });
+
+    function onScrollInit(items, wW) {
+        if (wW > 991) {
+            if (!$("body").data("firstInit")) {
+                items.each(function () {
+                    var $element = $(this),
+                        animationClass = $element.attr("data-animation"),
+                        animationDelay = $element.attr("data-animation-delay");
+                    $element.removeClass("no-animate");
+                    $element.css({
+                        "-webkit-animation-delay": animationDelay,
+                        "-moz-animation-delay": animationDelay,
+                        "animation-delay": animationDelay,
+                    });
+                    var trigger = $element;
+                    trigger.waypoint(
+                        function () {
+                            $element
+                                .addClass("animated")
+                                .addClass(animationClass);
+                            if ($element.hasClass("hoveranimation")) {
+                                $element.on(
+                                    "webkitAnimationEnd mozAnimationEnd oAnimationEnd animationEnd",
+                                    function () {
+                                        $(this)
+                                            .removeClass("animated")
+                                            .removeClass("animation")
+                                            .removeClass(animationClass);
+                                    }
+                                );
+                            }
+                        },
+                        {
+                            triggerOnce: true,
+                            offset: "90%",
+                        }
+                    );
+                });
+                $("body").data("firstInit", true);
+            }
+        } else {
+            items.each(function () {
+                var $element = $(this);
+                $element.addClass("no-animate");
+            });
+        }
+    }
 })(jQuery);
