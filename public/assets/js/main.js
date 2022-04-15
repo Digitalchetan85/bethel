@@ -4,10 +4,11 @@
         animation: $(".animation"),
     };
 
-    $("#HomeSlider").owlCarousel({
+    $("#TestingSlider").owlCarousel({
         loop: true,
+        autoplay: true,
         margin: 10,
-        nav: true,
+        nav: false,
         responsive: {
             0: {
                 items: 1,
