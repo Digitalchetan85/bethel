@@ -54,7 +54,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-4">
-                    <div class="card text-center py-3 animate__animated animate__fadeInLeft animate__delay-1s animation__repeate-1">
+                    <div
+                        class="card text-center py-3 animate__animated animate__fadeInLeft animate__delay-1s animation__repeate-1">
                         <div class="card-body">
                             <h5 class="card-title">Laptop Repairs</h5>
                             <p class="card-text">While you wait or same day Service if you decide not to proceed
@@ -67,7 +68,8 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card text-center py-3 animate__animated animate__fadeIn animate__delay-2s animation__repeate-1">
+                    <div
+                        class="card text-center py-3 animate__animated animate__fadeIn animate__delay-2s animation__repeate-1">
                         <div class="card-body">
                             <h5 class="card-title">Desktop Repair</h5>
                             <p class="card-text">We service all makes and models of Computers. Most Computers are
@@ -81,7 +83,8 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card text-center py-3 animate__animated animate__fadeInRight animate__delay-3s animation__repeate-1">
+                    <div
+                        class="card text-center py-3 animate__animated animate__fadeInRight animate__delay-3s animation__repeate-1">
                         <div class="card-body">
                             <h5 class="card-title">Other Services</h5>
                             <p class="card-text">With supporting text below as a natural lead-in to additional
@@ -151,7 +154,8 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="card border-0">
-                        <div class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
+                        <div
+                            class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
                             <i class="fa-solid fa-compact-disc"></i>
                             <h5 class="card-title text-center text-white">Hardware & Software Installation</h5>
                             <p class="card-text text-white">We can help you determine what hardware install or software
@@ -162,7 +166,8 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="card border-0">
-                        <div class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
+                        <div
+                            class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
                             <i class="fa-solid fa-screwdriver-wrench"></i>
                             <h5 class="card-title text-center text-white">Professional Computer Repair</h5>
                             <p class="card-text text-white">We fix all sorts of computer issues! From software to
@@ -174,7 +179,8 @@
                 </div>
                 <div class="col-sm-3">
                     <div class="card border-0">
-                        <div class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
+                        <div
+                            class="card-body text-center animate__animated animate__flash animate__delay-1s animation__repeate-1">
                             <i class="fa-solid fa-shield-virus"></i>
                             <h5 class="card-title text-center text-white">Virus & Spyware Removal</h5>
                             <p class="card-text text-white">We work through a remote super-secure connection, and give
@@ -337,14 +343,15 @@
     </div>
     <!-- Testimonial starts -->
     <!-- Why us Starts -->
-    <div class="py-3">
+    <div class="py-3 py-md-5" id="whyus">
         <div class="container">
-            <h2 class="text-center">Why Choose Us</h2>
+            <div class="py-3 py-md-5">
+                <h2 class="text-center">Why Choose Us</h2>
             <p class="text-center">There are many valid reasons why you should choose us to take care of your
                 valuable device</p>
-            <div class="row justify-content-center">
+            <div class="row g-3 justify-content-center">
                 <div class="col-sm-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <div class="card-body">
                             <i class="fa-solid fa-user-tie align-self-center"></i>
                             <h5 class="card-title">Experienced Professionals</h5>
@@ -355,7 +362,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <div class="card-body">
                             <i class="fa-solid fa-computer-mouse"></i>
                             <h5 class="card-title">Expert Technical Skills</h5>
@@ -366,7 +373,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <div class="card-body">
                             <i class="fa-solid fa-comments"></i>
                             <h5 class="card-title">Trustworthy See Reviews</h5>
@@ -377,7 +384,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <div class="card-body">
                             <i class="fa-solid fa-handshake-simple"></i>
                             <h5 class="card-title">Friendly Service</h5>
@@ -388,7 +395,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <div class="card-body">
                             <i class="fa-solid fa-star"></i>
                             <h5 class="card-title">Excellent Reputation</h5>
@@ -399,7 +406,7 @@
                     </div>
                 </div>
                 <div class="col-sm-4">
-                    <div class="card">
+                    <div class="card text-center">
                         <div class="card-body">
                             <i class="fa-solid fa-stethoscope"></i>
                             <h5 class="card-title">Affordable Diagnosis</h5>
@@ -410,24 +417,23 @@
                     </div>
                 </div>
             </div>
-            <div class="row">
-                
             </div>
         </div>
+
     </div>
     <!-- Why us ends -->
     <!-- Getting Help -->
-    <div class="py-3">
+    <div class="py-5 bg-primary">
         <div class="container">
             <div class="row">
 
                 <div class="col-md-12">
-                    <h2 class="text-center">Getting Help Easy</h2>
-                    <p class="text-center">Have a question? Give us a call or stop by a quote. It's that easy.
+                    <h2 class="text-center text-white">Getting Help Easy</h2>
+                    <p class="text-center text-white">Have a question? Give us a call or stop by a quote. It's that easy.
                     </p>
                     <div class="text-center mx-2">
-                        <a href="#" class="btn btn-primary">Book An Engineer</a>
-                        <a href="#" class="btn btn-primary">Ask a Question</a>
+                        <a href="#" class="btn btn-secondary">Book An Engineer</a>
+                        <a href="#" class="btn btn-secondary">Ask a Question</a>
                     </div>
                 </div>
             </div>
@@ -438,21 +444,21 @@
     <div class="py-5">
         <div class="container">
             <div class="row justify-content-center">
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center py-3 py-md-5">
                     <img src="{{ asset('assets/images/slider/sertficate-01.png') }}" alt="" class="img-fluid">
-                    <h5 class="text-center">We Value Your Time</h5>
+                    <h5 class="text-center py-2">We Value Your Time</h5>
                     <p class="text-center">Our tech support saves your time and energy and lets you enjoy your
                         computer to the max.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center py-3 py-md-5">
                     <img src="{{ asset('assets/images/slider/sertficate-02.png') }}" alt="" class="img-fluid">
-                    <h5 class="text-center">Remote, Hyper-secure Connection</h5>
+                    <h5 class="text-center py-2">Remote, Hyper-secure Connection</h5>
                     <p class="text-center">You select the service you need, and our tech support does all the
                         work through a remote, hyper-secure connection.</p>
                 </div>
-                <div class="col-md-4 text-center">
+                <div class="col-md-4 text-center py-3 py-md-5">
                     <img src="{{ asset('assets/images/slider/sertficate-03.png') }}" alt="" class="img-fluid">
-                    <h5 class="text-center">Customer Happiness</h5>
+                    <h5 class="text-center py-2">Customer Happiness</h5>
                     <p class="text-center">Your satisfaction is our #1 priority. We pledge to be by your side
                         until you are 100% satisfied with our services.</p>
                 </div>

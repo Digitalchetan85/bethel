@@ -146,3 +146,50 @@ $light-color: #f8f9fa;
         }
     }
 }
+
+#whyus{
+    .card{
+        transform: scale(0.9);
+        transition: all 0.5s ease;
+        .fa-user-tie, .fa-computer-mouse, .fa-comments, .fa-handshake-simple, .fa-star, .fa-stethoscope{
+            padding: 20px;
+            font-size: 30px;
+            background-color: $secondary-color;
+           color: $white-color;
+           border-radius: 50%;
+           margin: 15px 5px;
+       }
+       &:hover {
+           transform: scale(1);
+           transition: all 0.5s ease;
+       }
+        }
+    }
+
+#advantages{
+
+    .fa-location-dot, .fa-desktop, .fa-award,.fa-calendar-days{
+        padding: 20px;
+        font-size: 20px;
+        background-color: $secondary-color;
+       color: $white-color;
+       border-radius: 50%;
+       margin: 10px 5px;
+   }
+   &:hover {
+       transform: scale(1);
+       transition: all 0.5s ease;
+   }
+
+}
+
+#contact{
+    .fa-location-dot, .fa-clock{
+        padding: 30px;
+        font-size: 30px;
+        background-color: $secondary-color;
+       color: $white-color;
+       border-radius: 50%;
+       margin: 10px 5px;
+   }
+}
