@@ -33,8 +33,7 @@
                     </div>
                     <div class="col-md-4 align-self-center">
                         <div class="text-center">
-                            <a href="mailto:info@shanthaswebz.com" class="text-decoration-none"><i
-                                    class="fas fa-envelope"></i> info@shanthaswebz.com</a>
+                            <a href="mailto:info@bethelcomputech.com" class="text-decoration-none"><i class="fas fa-envelope"></i> info@bethelcomputech.com</a>
                         </div>
                     </div>
                     <div class="col-md-4 align-self-center">
@@ -51,11 +50,8 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-white" id="navbar">
             <div class="container">
-                <a class="navbar-brand" href="{{ route('home') }}"><img
-                        src="{{ asset('assets/images/logo.png') }}" alt="" class="img-fluid"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false"
-                    aria-label="Toggle navigation">
+                <a class="navbar-brand" href="{{ route('home') }}"><img src="{{ asset('assets/images/logo.png') }}" alt="" class="img-fluid"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
@@ -73,8 +69,7 @@
                             <a class="nav-link animsition-link" href="{{ route('desktop') }}">DeskTop</a>
                         </li>
                         <li class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 Services
                             </a>
                             <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
@@ -89,12 +84,10 @@
                                 <li><a class="dropdown-item" href="{{ route('services.data-backup') }}">Data Backup
                                         and Recovery</a>
                                 </li>
-                                <li><a class="dropdown-item"
-                                        href="{{ route('services.software-installation') }}">Software
+                                <li><a class="dropdown-item" href="{{ route('services.software-installation') }}">Software
                                         Installation</a>
                                 </li>
-                                <li><a class="dropdown-item"
-                                        href="{{ route('services.hardware-updates') }}">Hardware Updates</a>
+                                <li><a class="dropdown-item" href="{{ route('services.hardware-updates') }}">Hardware Updates</a>
                                 </li>
                             </ul>
                         </li>
@@ -102,92 +95,153 @@
                             <a class="nav-link animsition-link" href="{{ route('contact') }}">Contact</a>
                         </li>
                         @if (Route::has('login'))
-                            @auth
+                        @auth
 
-                                @if (Auth::user()->utype === 'ADM')
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            My Account ({{ Auth::user()->name }})
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item"
-                                                    href="{{ route('admin.dashboard') }}">Dashboard</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="{{ route('logout') }}"
-                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-                                            </li>
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                                @csrf
-                                            </form>
-                                        </ul>
-                                    </li>
-                                @else
-                                    <li class="nav-item dropdown">
-                                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                                            data-bs-toggle="dropdown" aria-expanded="false">
-                                            My Account ({{ Auth::user()->name }})
-                                        </a>
-                                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                            <li><a class="dropdown-item"
-                                                    href="{{ route('user.dashboard') }}">Dashboard</a>
-                                            </li>
-                                            <li><a class="dropdown-item" href="{{ route('logout') }}"
-                                                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
-                                            </li>
-                                            <form id="logout-form" action="{{ route('logout') }}" method="POST">
-                                                @csrf
-                                            </form>
-                                        </ul>
-                                    </li>
-                                @endif
-                            @else
-                                <li class="nav-item d-none">
-                                    <a class="nav-link animsition-link" href="{{ route('register') }}">Register</a>
+                        @if (Auth::user()->utype === 'ADM')
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Account ({{ Auth::user()->name }})
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="{{ route('admin.dashboard') }}">Dashboard</a>
                                 </li>
-                                <li class="nav-item d-none">
-                                    <a class="nav-link animsition-link" href="{{ route('login') }}">Login</a>
+                                <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
                                 </li>
-                            @endif
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                </form>
+                            </ul>
+                        </li>
+                        @else
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                My Account ({{ Auth::user()->name }})
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="{{ route('user.dashboard') }}">Dashboard</a>
+                                </li>
+                                <li><a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
+                                </li>
+                                <form id="logout-form" action="{{ route('logout') }}" method="POST">
+                                    @csrf
+                                </form>
+                            </ul>
+                        </li>
+                        @endif
+                        @else
+                        <li class="nav-item d-none">
+                            <a class="nav-link animsition-link" href="{{ route('register') }}">Register</a>
+                        </li>
+                        <li class="nav-item d-none">
+                            <a class="nav-link animsition-link" href="{{ route('login') }}">Login</a>
+                        </li>
+                        @endif
 
-                            @endif
-                        </ul>
-                        <ul class="list-unstyled">
-                            <li class="">
-                                <a class="btn btn-primary animsition-link" href="tel:08880470007"><i
-                                        class="fa fa-phone-volume"></i> 88804 70007</a>
-                            </li>
-                        </ul>
-                        {{-- <form class="d-flex">
+                        @endif
+                    </ul>
+                    <ul class="list-unstyled">
+                        <li class="">
+                            <a class="btn btn-primary animsition-link" href="tel:08880470007"><i class="fa fa-phone-volume"></i> 88804 70007</a>
+                        </li>
+                    </ul>
+                    {{-- <form class="d-flex">
                             <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
                             <button class="btn btn-outline-success" type="submit">Search</button>
                         </form> --}}
-                    </div>
                 </div>
-            </nav>
-        </header>
+            </div>
+        </nav>
+    </header>
 
-        {{ $slot }}
+    {{ $slot }}
 
-        <footer>
-            <div class="back-to-top position-fixed end-0 bottom-0" id="myBtn"><a href="#top"><span
-                        class="fa fa-envelope"></span></a></div>
-        </footer>
+    <footer>
+        <div id="footer" class="bg-dark py-3 py-md-5">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-md-3 align-self-center">
+                        <div class="text-start">
+                            <img src="{{ asset('assets/images/logo.png') }}" alt="" class="img-fluid">
+                        </div>
+                        <div class="address text-white">
+                            <p>
+                                #483, Shop No. 1, 8th Main, 10th Cross
+                                HAL 3rd Stage, Jeevan Bhima Nagar, Bengaluru - 560 075.
+                                <br />
+                                <a href="tel:09513636036">Contact: +91 95136 36036</a>
+                                <br />
+                                <a href="mailto:business@shanthasdesigns.com">
+                                    Email: business@shanthaswebz.com
+                                </a>
+                            </p>
+                        </div>
+                    </div>
+                    
 
-        <!-- Optional JavaScript; choose one of the two! -->
+                    <div class="col-md-3">
+                        <h5 class="text-center text-white">Quick Links</h5>
+                        
+                            <ul class=" text-center unstyled">
+                                <li><a href="{{ route('home') }}" class="menu text-decoration-none text-white">Home</a></li>
+                                <li><a href="{{ route('about') }}" class="menu text-decoration-none text-white">About</a></li>
+                                <li><a href="{{ route('laptop') }}" class=" menu text-decoration-none text-white">Laptop</a></li>
+                                <li><a href="{{ route('desktop') }}" class="menu text-decoration-none text-white">Desktop</a></li>
+                                <li><a href="{{ route('contact') }}" class=" menu text-decoration-none text-white">Contact Us</a></li>
+                            </ul>
+                        
+                    </div>
 
-        <!-- Option 1: Bootstrap Bundle with Popper -->
-        <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
-        <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
-        <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
-        <script src="{{ asset('assets/js/main.js') }}"></script>
-        <script src="{{ asset('assets/js/font-awesome.js') }}"></script>
-        <script src="{{ asset('assets/js/animsition.min.js') }}"></script>
-        <script src="https://cdn.jsdelivr.net/gh/kmlpandey77/bootnavbar/js/bootnavbar.js"></script>
+                    
 
-        @livewireScripts
-        <!-- Option 2: Separate Popper and Bootstrap JS -->
-        <!--
+                    <div class="col-md-3">
+                        <h5 class="text-center text-white">Services</h5>
+                        <div class="text-center">
+                            <ul class="text-center unstyled">
+                                <li><a href="{{ route('services.laptop-repair') }}" class="menu text-decoration-none text-white">Laptop Repair</a></li>
+                                <li><a href="{{ route('services.pc-repair') }}" class="menu text-decoration-none text-white">Desktop Repair</a></li>
+                                <li><a href="{{ route('services.mac-repair') }}" class=" menu text-decoration-none text-white">Mac Repair</a></li>
+                                <li><a href="{{ route('services.data-backup') }}" class="menu text-decoration-none text-white">Data Backup and Recovery</a></li>
+                                <li><a href="{{ route('services.software-installation') }}" class=" menu text-decoration-none text-white">Software Installation</a></li>
+                                <li><a href="{{ route('services.hardware-updates') }}" class="menu text-decoration-none text-white">Hardware Updates</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+
+                    <div class="col-md-3">
+                        <h5 class="text-center text-white">Social Connect</h5>
+                        <div class="text-center">
+                            <a href="#" class="text-decoration-none text-white"><i class="fab fa-facebook fs-5 mx-2"></i></a>
+                            <a href="#" class="text-decoration-none text-white"><i class="fab fa-instagram fs-5 mx-2"></i></a>
+                            <a href="#" class="text-decoration-none text-white"><i class="fab fa-linkedin fs-5 mx-2"></i></a>
+                            <a href="#" class="text-decoration-none text-white"><i class="fab fa-youtube fs-5 mx-2"></i></a>
+                        </div>
+                    </div>
+                    <hr class="text-white" />
+
+                </div>
+                <p class="text-center text-white">Copy Rights reserved. Developed byShanthas Webz.</p>
+            </div>
+        </div>
+        <!-- <div class="back-to-top position-fixed end-0 bottom-0" id="myBtn">
+            <a href="#top"><span class="fa fa-envelope"></span></a>
+        </div> -->
+    </footer>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="{{ asset('assets/js/jquery.min.js') }}"></script>
+    <script src="{{ asset('assets/js/bootstrap.bundle.min.js') }}"></script>
+    <script src="{{ asset('assets/js/owl.carousel.min.js') }}"></script>
+    <script src="{{ asset('assets/js/main.js') }}"></script>
+    <script src="{{ asset('assets/js/font-awesome.js') }}"></script>
+    <script src="{{ asset('assets/js/animsition.min.js') }}"></script>
+    <script src="https://cdn.jsdelivr.net/gh/kmlpandey77/bootnavbar/js/bootnavbar.js"></script>
+
+    @livewireScripts
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
                                 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
                                                                 integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
                                                                 crossorigin="anonymous">
@@ -197,6 +251,6 @@
                                                                 crossorigin="anonymous">
                                 </script>
                                 -->
-    </body>
+</body>
 
-    </html>
+</html>
